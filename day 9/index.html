@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: purple;
+            height: 200px;
+            width: 200px;
+            animation-name: any;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-delay: 3s;
+
+
+        } 
+        @keyframes any{
+            0%{
+                background-color: rgb(177, 73, 73);
+                height: 10px;
+                width: 200px;
+                transform: translateY(0px);
+            }
+           50%{
+            background-color: rgb(32, 139, 107);
+            transform: translateY(100px);
+           }
+
+           100%{
+            background-color: rgb(222, 131, 41);
+            transform: translateY(200px);
+           }
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h2>animations</h2>
+    <div></div>
+
+    
+</body>
+</html>
