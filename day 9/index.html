@@ -6,33 +6,39 @@
     <title>Document</title>
     <style>
         div{
-            background-color: purple;
-            height: 200px;
-            width: 200px;
-            animation-name: any;
-            animation-duration: 4s;
+            background-color:rgb(237, 38, 23);
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border :5px solid black;
+            animation-name:any;
+            animation-duration: 900ms;
+            margin:auto;
+            background:linear-gradient(white green);
+            animation-timing-function: ease-in;
             animation-iteration-count: infinite;
-            animation-delay: 3s;
-
-
+            animation-direction: alternate;
+            
         } 
         @keyframes any{
             0%{
-                background-color: rgb(177, 73, 73);
-                height: 10px;
-                width: 200px;
+                background-color: white
+                /* height: 10px; */
+                /* width: 200px; */
+               border-radius: 50% ;
                 transform: translateY(0px);
             }
-           50%{
+           /* 50%{
             background-color: rgb(32, 139, 107);
             transform: translateY(100px);
-           }
+           } */
 
            100%{
-            background-color: rgb(222, 131, 41);
-            transform: translateY(200px);
+            /* background-color: rgb(222, 131, 45) */
+            transform: translateY(85vh) rotate(360deg);
            }
         }
+        
         
         
     </style>
@@ -40,6 +46,7 @@
 <body>
     <h2>animations</h2>
     <div></div>
+    
 
     
 </body>
