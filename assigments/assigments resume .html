@@ -1,0 +1,285 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Vikash upadhyay | Portfolio</title>
+
+<style>
+/* GLOBAL STYLES */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background: linear-gradient(120deg,#f6d365,#fda085);
+    color:#333;
+}
+
+/* HERO SECTION */
+header{
+    min-height:100vh;
+    background: linear-gradient(135deg,#f1dcec,#57b8ec,#31dfd3);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+    position:relative;
+    overflow:hidden;
+}
+
+/* PROFILE IMAGE */
+.profile-img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid white;
+    box-shadow:0 0 30px rgba(0,0,0,0.4);
+    margin-bottom:20px;
+    transition:0.4s;
+}
+
+.profile-img:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 50px rgba(255,255,255,0.7);
+}
+
+/* HERO TEXT */
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.3rem;
+    margin-bottom:20px;
+}
+
+/* TYPING EFFECT */
+.typing {
+    font-weight:bold;
+    font-size:1.5rem;
+    color:#fff;
+    border-right: 3px solid #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    width:0;
+    animation: typing 3s steps(30) forwards, blink 0.75s step-end infinite;
+    margin-bottom:20px;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+}
+
+/* SECTION */
+section{
+    max-width:1100px;
+    margin:60px auto;
+    padding:20px;
+}
+
+/* CARD */
+.card{
+    background: linear-gradient(135deg,#ffffff,#f7f7ff);
+    border-radius:20px;
+    padding:35px;
+    margin-bottom:50px;
+    box-shadow:0 20px 40px rgba(123, 239, 187, 0.742);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:scale(1.03);
+}
+
+/* HEADINGS */
+h2{
+    font-size:2.2rem;
+    margin-bottom:20px;
+    background: linear-gradient(90deg,#ff512f,#dd2476);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+/* ABOUT ME TAGS */
+.about-text{
+    font-size:1.1rem;
+    line-height:1.8;
+}
+
+.tag{
+    padding:5px 12px;
+    border-radius:20px;
+    font-weight:bold;
+    color:white;
+    margin:0 4px;
+    display:inline-block;
+}
+
+/* Tag colors */
+.name{ background:linear-gradient(135deg,#ee8340,#f2f0f4); }
+.year{ background:linear-gradient(135deg,#cdc5c6,#ff7eb3); }
+.design{ background:linear-gradient(135deg,#43cea2,#185a9d); }
+.modern{ background:linear-gradient(135deg,#f7971e,#ffd200); color:#000; }
+.html{ background:#79c4d1; }
+.css{ background:#8fb860; }
+.js{ background:#f0db4f; color:#000; }
+
+/* SKILLS */
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+    gap:20px;
+}
+
+.skill{
+    padding:18px;
+    text-align:center;
+    font-weight:bold;
+    color:white;
+    border-radius:12px;
+    background: linear-gradient(135deg,#a13337,#185a9d);
+}
+
+/* PROJECTS */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.project{
+    background: linear-gradient(135deg,#fc5c7d,#6a82fb);
+    color:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 15px 30px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+.project:hover{
+    transform:translateY(-10px);
+}
+
+.project img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.project-content{
+    padding:15px;
+}
+
+/* FOOTER */
+footer{
+    background: linear-gradient(90deg,#141e30,#243b55);
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+footer span{
+    color:#ff758c;
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+    header h1{ font-size:2.2rem; }
+    .typing{ font-size:1.2rem; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <!-- PROFILE IMAGE -->
+    <img src="profile_image.jpg" alt="Vikash Upadhyay" class="profile-img">
+   
+
+    <h1>Vikash Upadhyay</h1>
+    <div class="typing">2nd Year Student • Web Developer • UI Designer</div>
+
+    <p class="about-text">
+        Hi! I'm <span class="tag name">Vikash Upadhyay</span>, a 
+        <span class="tag year">2nd Year Student</span> passionate about building 
+        <span class="tag design">Colorful</span> and 
+        <span class="tag modern">Modern</span> websites.
+        I enjoy working with 
+        <span class="tag html">HTML</span>, 
+        <span class="tag css">CSS</span>, and 
+        <span class="tag js">JavaScript</span> to create clean and user-friendly UI designs.
+    </p>
+</header>
+
+<section>
+    <div class="card">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">C / C++</div>
+            <div class="skill">Git & GitHub</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Projects</h2>
+        <div class="projects">
+
+            <div class="project">
+                <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=800&q=80">
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+                    <p>Personal colorful portfolio using HTML & CSS.</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80">
+                <div class="project-content">
+                    <h3>Landing Page</h3>
+                    <p>Modern responsive landing page design.</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80">
+                <div class="project-content">
+                    <h3>Learning AI</h3>
+                    <p>AI-inspired student management system with smart data handling.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Contact</h2>
+        <p>Email: vikash@email.com</p>
+        <p>Phone: +91 90000000888</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>Design by <span>Vikash Upadhyay</span> © 2026</p>
+</footer>
+
+</body>
+</html>
